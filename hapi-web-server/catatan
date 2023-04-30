@@ -1,0 +1,3 @@
+npm init --y
+npm run start
+npm i @hapi/hapi / npm install @hapi/hapi
