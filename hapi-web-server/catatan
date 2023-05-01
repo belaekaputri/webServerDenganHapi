@@ -1,3 +1,24 @@
-npm init --y
-npm run start
-npm i @hapi/hapi / npm install @hapi/hapi
+handler: (request, h) => {
+        return 'Halaman tidak ditemukan';
+    },
+    request merupakan objek menampung dtail dari permintaan client, seperti path da wury paramerters,payload,headers
+     h (hapi) response tookit menampung banyak method untuk menanggapi permintaan client
+
+
+     // Detailed notation
+const handler = (request, h) => {
+    const response = h.response('success');
+    response.type('text/plain');
+    response.header('X-Custom', 'some-value');
+    return response;
+};
+ 
+// Chained notation
+const handler = (request, h) => {
+    return h.response('success')
+        .type('text/plain')
+        .header('X-Custom', 'some-value');
+};
+
+
+istilah request permintaan client dan h response permintaan client dari server
