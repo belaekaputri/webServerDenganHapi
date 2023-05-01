@@ -1,9 +1,13 @@
 const routes=[
     {
         method:'GET',
-        path: '/hello/{name?}', //tanada ? jika user hanya ketik hello saja maka akan muncul name=stranger sebagai default
+        path: '/hello/{name?}', //tanda ? jika user hanya ketik hello saja maka akan muncul name=stranger sebagai default
         handler:(request,h)=>{
             const {name="stranger"} =request.params; //name=stranger nilai default
+            const {lang}=request.query;
+            if(lang==='id'){ //hello/belaekaputri?lang=id
+                return `hai, ${name}!`;
+            }
             return `Hello,${name}`;
         }
     },
