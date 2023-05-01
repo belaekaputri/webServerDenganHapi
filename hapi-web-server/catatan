@@ -1,3 +1,12 @@
-npm init --y
+Path dalam routing bisa dikatakan sebagai alamat yang digunakan client untuk melakukan permintaan ke server
+
+npm init --y //buat file jadi ada package.json 
 npm run start
 npm i @hapi/hapi / npm install @hapi/hapi
+
+
+curl -X GET http://localhost:5000/hello/kimhanbin
+// output: Hello, kimhanbin!
+
+curl -X GET http://localhost:5000/hello
+// output: Hello, stranger!s
