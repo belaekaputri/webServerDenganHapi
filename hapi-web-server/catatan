@@ -5,9 +5,4 @@ npm run start
 npm i @hapi/hapi / npm install @hapi/hapi
 
 
-curl -X GET http://localhost:5000/hello/belaekaputri?lang=id
-// hai,belaekaputri!
-curl -X GET http://localhost:5000/hello/belaekaputri
-//Hello,belaekaputri
-curl -X GET http://localhost:5000/hello
-//Hello,stranger //nilai default(stranger)
+{ "username": "harrypotter", "password": "encryptedpassword" }
