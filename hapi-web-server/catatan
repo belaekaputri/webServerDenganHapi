@@ -1,3 +1,14 @@
 npm init --y
 npm run start
 npm i @hapi/hapi / npm install @hapi/hapi
+
+catatan method/verb Request dan Routing
+npm run start
+ke git bash uji sesuai logic
+curl -X GET http://localhost:5000
+
+curl -X GET http://localhost:5000/about
+
+curl -X GET http://localhost:5000/test
+
+curl -X POST http://localhost:5000
